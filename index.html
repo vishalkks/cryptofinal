@@ -16,10 +16,28 @@ img {
     max-width: 100%;
 }
    </style>   
-   <title>Well well well</title>
+   <title>Welcome</title>
    </head>
    <body>
-      <img class="center fit" src = "packetcapt.png"
-      alt = "This the packet capture"  />
+	<form id="form1" action="test.html" method="post">
+  <div class="container">
+    <label for="uname"><b>x</b></label>
+    <input type="text" placeholder="Enter the x" name="uname" required>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+<script>
+var formDom = document.getElementById("form1")
+formDom.onsubmit =  function(event){
+event.preventDefault()
+if (document.getElementById("sig").value != "9011") {
+        window.alert("...... nope nope nope")
+}
+else {
+        window.location = "https://vishalkks.github.io/First.pdf"
+}
+
+}
+</script>
    </body>
 </html>
