@@ -22,7 +22,7 @@ img {
 	<form id="form1" action="test.html" method="post">
   <div class="container">
     <label for="uname"><b>x</b></label>
-    <input type="text" placeholder="Enter the x" name="uname" required>
+    <input id="x" type="text" placeholder="Enter the x" name="uname" required>
     <button type="submit">Submit</button>
   </div>
 </form>
@@ -30,7 +30,7 @@ img {
 var formDom = document.getElementById("form1")
 formDom.onsubmit =  function(event){
 event.preventDefault()
-if (document.getElementById("sig").value != "9011") {
+if (document.getElementById("x").value != "9011") {
         window.alert("...... nope nope nope")
 }
 else {
